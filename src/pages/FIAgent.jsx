@@ -20,7 +20,7 @@ function FIAgent() {
                   </div>
                   <button
                     type="button"
-                    className="btn btn-primary"
+                    className="btn btn-primary m-0"
                     data-mdb-ripple-init
                   >
                     <i className="fas fa-search"></i>
@@ -29,7 +29,7 @@ function FIAgent() {
               </div>
             </div>
             <div className="heading mb-2">
-              <h2>Lead Recieved</h2>
+              <h2 className="text-start text-capitalize my-3">Lead Recieved</h2>
             </div>
             <div className="col-12 mt-0">
               <div className="table-responsive bg-white">
@@ -322,7 +322,7 @@ function FIAgent() {
               </div>
             </div>
             <div className="heading mb-0">
-              <h2>Lead Submitted</h2>
+              <h2 className="text-start text-capitalize my-3">Lead Submitted</h2>
             </div>
             <div className="row gx-2 gy-3 mt-0">
               <div className="col-lg-4">
@@ -413,7 +413,7 @@ function FIAgent() {
 
             <div className="b1-wrapper">
               <div className="heading mb-0">
-                <h2>Lead Submitted</h2>
+                <h2 className="text-capitalize text-start mb-2">Lead Submitted</h2>
               </div>
               <div className="row">
                 <div className="col-lg-4">

@@ -1,4 +1,5 @@
 import { useFormik } from "formik";
+import { useEffect } from "react";
 import * as Yup from "yup";
 
 const weekDays = [
@@ -54,6 +55,9 @@ function Home() {
       console.log("form values", values);
     },
   });
+  useEffect(() => {
+    document.body.style.backgroundImage = "none";
+  }, []);
   return (
     <section className="form-wrapper">
       <div className="container">

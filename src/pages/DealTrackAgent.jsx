@@ -152,153 +152,179 @@ function DealTrackAgent() {
                           suscipit, temporibus nostrum debitis.
                         </textarea>
 
-                        {/* <div className="form-group custom-file my-2" x-data="{ fileName: '' }">
-                                              <div className="input-group">
-                                                <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]" className="d-none">
-                                                <button className="browse btn btn-primary px-4" type="button" x-on:click.prevent="$refs.file.click()"><i className="fas fa-image"></i> Attach File</button>
-                                              </div> */}
+                        <div
+                          className="form-group custom-file my-2"
+                          x-data="{ fileName: '' }"
+                        >
+                          <div className="input-group">
+                            <input
+                              type="file"
+                              x-ref="file"
+                              name="img[]"
+                              className="d-none"
+                            />
+                            <button
+                              className="browse btn btn-primary px-4"
+                              type="button"
+                            >
+                              <i className="fas fa-image"></i> Attach File
+                            </button>
+                          </div>
+                        </div>
+                        <div className="btns-wrapper">
+                          <a href="" className="btn">
+                            SMS
+                          </a>
+                          <a href="" className="btn">
+                            email
+                          </a>
+                          <a href="" className="btn">
+                            vocal
+                          </a>
+                          <a href="" className="btn">
+                            ibv
+                          </a>
+                          <a href="" className="btn">
+                            send message
+                          </a>
+                          <a href="" className="btn">
+                            add campaign
+                          </a>
+                          <a href="" className="btn">
+                            Message Forward
+                          </a>
+                        </div>
                       </div>
-                      <div className="btns-wrapper">
-                        <a href="" className="btn">
-                          SMS
-                        </a>
-                        <a href="" className="btn">
-                          email
-                        </a>
-                        <a href="" className="btn">
-                          vocal
-                        </a>
-                        <a href="" className="btn">
-                          ibv
-                        </a>
-                        <a href="" className="btn">
-                          send message
-                        </a>
-                        <a href="" className="btn">
-                          add campaign
-                        </a>
-                        <a href="" className="btn">
-                          Message Forward
-                        </a>
-                      </div>
-                    </div>
-                    <div
-                      className="tab-pane fade"
-                      id="message-client"
-                      role="tabpanel"
-                      aria-labelledby="ex1-tab-2"
-                    >
-                      <textarea
-                        className="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
+                      <div
+                        className="tab-pane fade"
+                        id="message-client"
+                        role="tabpanel"
+                        aria-labelledby="ex1-tab-2"
                       >
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sed quisquam soluta possimus? Reprehenderit ducimus
-                        tempora distinctio? Ipsam illo quibusdam at corrupti
-                        fugit excepturi! Amet exercitationem dolores suscipit,
-                        temporibus nostrum debitis.
-                      </textarea>
-                      {/* <div className="form-group custom-file my-2" x-data="{ fileName: '' }">
+                        <textarea
+                          className="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        >
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sed quisquam soluta possimus? Reprehenderit
+                          ducimus tempora distinctio? Ipsam illo quibusdam at
+                          corrupti fugit excepturi! Amet exercitationem dolores
+                          suscipit, temporibus nostrum debitis.
+                        </textarea>
+                        {/* <div className="form-group custom-file my-2" x-data="{ fileName: '' }">
                                               <div className="input-group">
                                                 <input type="file" x-ref="file" @change="fileName = $refs.file.files[0].name" name="img[]" className="d-none">
                                                 <button className="browse btn btn-primary px-4" type="button" x-on:click.prevent="$refs.file.click()"><i className="fas fa-image"></i> Attach File</button>
                                               </div>
                                             </div> */}
-                      <div className="btns-wrapper">
-                        <a href="" className="btn">
-                          SMS
-                        </a>
-                        <a href="" className="btn">
-                          email
-                        </a>
-                        <a href="" className="btn">
-                          vocal
-                        </a>
-                        <a href="" className="btn">
-                          ibv
-                        </a>
-                        <a href="" className="btn">
-                          send message
-                        </a>
-                        <a href="" className="btn">
-                          add campaign
-                        </a>
-                        <a href="" className="btn">
-                          Message Forward
-                        </a>
+                        <div className="btns-wrapper">
+                          <a href="" className="btn">
+                            SMS
+                          </a>
+                          <a href="" className="btn">
+                            email
+                          </a>
+                          <a href="" className="btn">
+                            vocal
+                          </a>
+                          <a href="" className="btn">
+                            ibv
+                          </a>
+                          <a href="" className="btn">
+                            send message
+                          </a>
+                          <a href="" className="btn">
+                            add campaign
+                          </a>
+                          <a href="" className="btn">
+                            Message Forward
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-12">
-            <div className="b1-wrapper ">
-              <div className="heading mb-0 d-flex align-items-center">
-                <h2 className="">Campaign</h2>
-                <div className="onoffbtn">
+            <div className="col-12">
+              <div className="b1-wrapper ">
+                <div className="heading mb-0 d-flex align-items-center">
+                  <h2 className="text-capitalize">Campaign</h2>
+                  <div className="onoffbtn">
+                    <div
+                      className="btn-group align-items-stretch"
+                      role="group"
+                      aria-label="Basic radio toggle button group"
+                    >
+                      <input
+                        type="radio"
+                        className="btn-check w-100 h-100"
+                        name="btnradio"
+                        id="btnradio1"
+                        autocomplete="off"
+                        checked
+                      />
+                      <label
+                        style={{ padding: " 12px", margin: "0" }}
+                        className="fw-normal btn btn-outline-primary d-flex justify-content-center align-items-center"
+                        for="btnradio1"
+                      >
+                        ON
+                      </label>
+
+                      <input
+                        type="radio"
+                        className="btn-check w-100 h-100"
+                        name="btnradio"
+                        id="btnradio2"
+                        autocomplete="off"
+                      />
+                      <label
+                        style={{ padding: "6px 12px", margin: "0" }}
+                        className="fw-normal btn btn-outline-primary d-flex justify-content-center align-items-center"
+                        for="btnradio2"
+                      >
+                        OFF
+                      </label>
+                    </div>
+                  </div>
                   <div
-                    className="btn-group"
+                    className="btn-group "
                     role="group"
-                    aria-label="Basic radio toggle button group"
+                    aria-label="Basic checkbox toggle button group"
                   >
                     <input
-                      type="radio"
+                      type="checkbox"
                       className="btn-check"
-                      name="btnradio"
-                      id="btnradio1"
-                      autocomplete="off"
-                      checked
-                    />
-                    <label className="btn btn-outline-primary" for="btnradio1">
-                      ON
-                    </label>
-
-                    <input
-                      type="radio"
-                      className="btn-check"
-                      name="btnradio"
-                      id="btnradio2"
+                      id="btncheck1"
                       autocomplete="off"
                     />
-                    <label className="btn btn-outline-primary" for="btnradio2">
-                      OFF
+                    <label
+                      style={{ padding: "12px" }}
+                      className="start-campaign fw-normal btn btn-outline-primary"
+                      for="btncheck1"
+                    >
+                      Start Campaign
                     </label>
                   </div>
                 </div>
-                <div
-                  className="btn-group "
-                  role="group"
-                  aria-label="Basic checkbox toggle button group"
-                >
-                  <input
-                    type="checkbox"
-                    className="btn-check"
-                    id="btncheck1"
-                    autocomplete="off"
-                  />
-                  <label class="btn btn-outline-primary" for="btncheck1">
-                    Start Campaign
-                  </label>
-                </div>
-              </div>
-              <div class="lead-status b1-page campaign-sec">
-                <div class="details align-items-center border-0">
-                  <h3 class="m-0 border-0">Jhon Doe</h3>
-                  <div>
-                    <div class="banks">
-                      <a href="">Start Date</a>
-                      <a href="">End Date</a>
-                      <a href="">SMS</a>
-                      <a href="">Vocal</a>
-                      <a href="">Email</a>
-                      <input
-                        type="text"
-                        class="form-control w-100"
-                        placeholder="Message..."
-                      />
+                <div className="lead-status b1-page campaign-sec">
+                  <div className="details align-items-center border-0">
+                    <h3 className="m-0 border-0">Jhon Doe</h3>
+                    <div>
+                      <div className="banks">
+                        <a href="">Start Date</a>
+                        <a href="">End Date</a>
+                        <a href="">SMS</a>
+                        <a href="">Vocal</a>
+                        <a href="">Email</a>
+                        <input
+                          type="text"
+                          className="form-control w-100"
+                          placeholder="Message..."
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

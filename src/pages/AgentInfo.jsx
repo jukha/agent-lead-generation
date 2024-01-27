@@ -1,10 +1,32 @@
+import { useFormik } from "formik";
+import { useEffect } from "react";
+import * as Yup from "yup";
+
 function AgentInfo() {
+  const formik = useFormik({
+    initialValues: {
+      agentName: "",
+      agetNo: "",
+      etc: "",
+      email: "",
+      file1: null,
+      file2: null,
+    },
+    validationSchema: Yup.object({}),
+    onSubmit: (values) => {
+      console.log("form values", values);
+    },
+  });
+
+  useEffect(() => {
+    document.body.style.backgroundImage = "none";
+  }, []);
   return (
     <section className="form-wrapper">
       <div className="container">
         <div className="inner">
           <div className="integration shadow mb-5 bg-body rounded bg-white">
-            <form action="">
+            <form onSubmit={formik.handleSubmit}>
               <div className="row my-4 gy-2">
                 <div className="col-12 text-center mb-4">
                   <h2>Agent Info</h2>
@@ -15,6 +37,7 @@ function AgentInfo() {
                     className="form-control"
                     id="inputEmail4"
                     placeholder="Agent Name"
+                    {...formik.getFieldProps("agentName")}
                   />
                 </div>
                 <div className="col-md-5">
@@ -23,6 +46,7 @@ function AgentInfo() {
                     className="form-control"
                     id="inputEmail4"
                     placeholder="Agent's Number"
+                    {...formik.getFieldProps("agentNo")}
                   />
                 </div>
                 <div className="col-md-2">
@@ -31,6 +55,7 @@ function AgentInfo() {
                     className="form-control"
                     id="inputEmail4"
                     placeholder="ETC"
+                    {...formik.getFieldProps("etc")}
                   />
                 </div>
                 <div className="col-12">
@@ -39,6 +64,7 @@ function AgentInfo() {
                     className="form-control"
                     id="inputEmail4"
                     placeholder="Email Address"
+                    {...formik.getFieldProps("email")}
                   />
                 </div>
                 <div className="col-md-4">
@@ -46,7 +72,7 @@ function AgentInfo() {
                     Define Agent's Schedule
                   </a>
                 </div>
-                <div className="deal-menu">
+                {/* <div className="deal-menu">
                   <div className="row my-2">
                     <div className="schedule">
                       <div className="timing">
@@ -189,7 +215,7 @@ function AgentInfo() {
                       </button>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="col-12">
                   <div className="vocal-campaigns-head">
                     <label for="inputAddress" className="form-label fw-bold">
@@ -201,10 +227,18 @@ function AgentInfo() {
                   </div>
                   <div className="vocal-messages">
                     <div className="item">
-                      <input type="file" className="form-control" />
+                      <input
+                        type="file"
+                        className="form-control"
+                        {...formik.getFieldProps("file1")}
+                      />
                     </div>
                     <div className="item">
-                      <input type="file" className="form-control" />
+                      <input
+                        type="file"
+                        className="form-control"
+                        {...formik.getFieldProps("file2")}
+                      />
                     </div>
                   </div>
                 </div>
